@@ -3,8 +3,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import NavBar from './NavBar';
 import MainSection from './MainSection';
 import HowItWorks from './HowItWorks';
-import PrivacyPolicy from './PrivacyPolicy';
-import TermsOfUse from './TermsOfUse';
+
 import Footer from './Footer';
 import './App.css';
 
@@ -16,8 +15,6 @@ const App = () => {
         <Routes>
           <Route path="/" element={<MainSection />} />
           <Route path="/how-it-works" element={<HowItWorks />} />
-          <Route path="/privacy-policy" element={<PrivacyPolicy />} />
-          <Route path="/terms-of-use" element={<TermsOfUse />} />
         </Routes>
         <Footer />
       </div>
