@@ -2,7 +2,7 @@ body {
  font-family: 'Open Sans', sans-serif;
   margin: 0;
   padding: 0;
-  background: linear-gradient(-45deg, #3f9866, #1c5736, #2f754d, rgb(74, 165, 144));
+  background: linear-gradient(-45deg, rgba(64, 150, 101,0.5), rgba(28, 87, 53,0.5), rgba(47, 117, 77,0.5),rgba(74, 165, 144,0.5));
   color: #000000;
   background-size: 400% 400%;
     animation: gradient 15s ease infinite;
@@ -11,51 +11,57 @@ body {
     overflow-x: hidden;
   
 }
-
 nav {
   display: flex;
-  justify-content: flex-end; 
-  align-items: center; 
+  justify-content: space-around;
+  text-orientation: right;
   padding: 10px;
   font-size: 20px;
-  width: 100%; 
- 
 }
 
-nav a {
-  text-decoration: none;
-  color: #fff;
-  padding: 10px;
-  position: relative;
-}
-
-nav a::after {
-  content: '';
-  display: block;
-  height: 2px;
-  width: 0;
-  background: transparent;
-  transition: width 0.3s;
-}
-
-nav a:hover::after {
-  width: 100%;
-  background: #fff;
-}
-
-nav ul {
+ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
-  display: flex;
-  /* justify-content: center; Remova esta linha */
 }
 
-nav li {
+li {
   margin-right: 1rem;
+  position: relative;
+  cursor: pointer;
 }
 
+.dropdown {
+  position: relative;
+}
 
+.dropdown-content {
+  display: block;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #fff;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  padding: 10px;
+  z-index: 1;
+}
+
+.dropdown-content li {
+  margin: 0;
+}
+
+.dropdown-content li a {
+  color: #333;
+  text-decoration: none;
+  display: block;
+  padding: 8px 0;
+  transition: background-color 0.3s;
+}
+
+.dropdown-content li a:hover {
+  background-color: #f0f0f0;
+}
 
 .home-page {
   display: flex;
@@ -83,8 +89,8 @@ nav li {
 
 .how-it-works {
   text-align: center;
-}
-
+  margin-top: 20px; 
+  }
 
 .download-section {
   flex: 1;
@@ -156,4 +162,9 @@ footer {
   bottom: 0;
   width: 100%;
  
+}
+
+.how-it-works{
+  color:#f9f9f9;
+  background-color: #fff;
 }
