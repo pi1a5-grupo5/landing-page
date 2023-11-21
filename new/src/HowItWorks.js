@@ -12,8 +12,14 @@ const HowItWorks = () => {
       <div className="text-section">
         <h2>Como Funciona</h2>
         <p>
-          Descrição sobre como o Carllet funciona. Pode ser um parágrafo mais longo
-          explicando os recursos e benefícios.
+        A plataforma oferece recursos como:
+        <ul className='list'>
+         <li>Registro automático de corridas e gastos</li>
+         <li>Cálculo do lucro líquido</li>
+         <li>Análise de despesas</li>
+         <li>Criar metas de ganhos</li>
+         <li>Receber alertas sobre gastos excessivos com manutenções,</li>
+        </ul> 
         </p>
       </div>
     </div>

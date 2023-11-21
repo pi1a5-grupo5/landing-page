@@ -11,9 +11,6 @@ const NavBar = () => {
         </Link>
       </div>
       <ul className="nav-links">
-        <li>
-          <Link to=".how-it-works">Como Funciona</Link>
-        </li>
         <li className="dropdown">
           <span>Mais</span>
           <div className="dropdown-content">

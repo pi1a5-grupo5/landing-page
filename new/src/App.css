@@ -139,9 +139,51 @@ body {
 
 .text-section {
   flex: 1;
-  padding-left: 20px; 
+  max-width: 50%;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  align-items: left;
+  padding-left: 20px;
+}
+.text-section p{
+  flex: 1;
+  max-width: 50%;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  align-items: left;
+  padding-left: 50px;
+  font-size: 20px;
 }
 
+.text-section ul{
+  padding-left: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  
+}
+.text-section h2{
+  justify-content: center;
+  font-size: 36px;
+  padding-left: 50px;
+}
+
+.text-section ul li {
+  list-style-type: none;
+  padding-left: 1em; /* Ajuste o espaçamento conforme necessário */
+}
+
+.text-section ul li::before {
+  content: '\2022'; /* Código unicode para um ponto */
+  color: #417843; /* Cor do ponto, ajuste conforme necessário */
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em; /* Garante que o ponto não altera o espaçamento total */
+}
 .image-section img {
   max-width:250px;
   max-height:500px;
@@ -169,7 +211,7 @@ body {
 }
 
 .download-section p {
-  font-size: 1rem;
+  font-size: 22px;
   margin-bottom: 20px;
   font-family: 'Poppins', sans-serif;
   text-align: left;
@@ -215,10 +257,9 @@ body {
 
 .main-section {
   background: linear-gradient(-45deg, rgba(64, 150, 101,0.5), rgba(28, 87, 53,0.5), rgba(47, 117, 77,0.5),rgba(74, 165, 144,0.5));
-  padding: 2rem;
   display: flex;
   flex-direction: column;
-  align-items: center; /* Centraliza na horizontal */
+  align-items: center; 
 }
 
 .side-by-side {
@@ -231,6 +272,5 @@ body {
 }
 
 .one{
-  position: relative;
-  overflow-x: hidden;
+  width: 100%;
 }

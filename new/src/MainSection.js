@@ -12,9 +12,8 @@ const MainSection = () => {
         <DownloadSection />
       </div>
       <div className='one'>
-      <HowItWorks />
+      <HowItWorks/>
       </div>
-     
     </div>
   );
 };
