@@ -1,16 +1,22 @@
 import React from 'react';
-import './App.css';
 
 import CelularImage from './CelularImage';
 import DownloadSection from './DownloadSection';
+import HowItWorks from './HowItWorks';
 
 const MainSection = () => {
-    return (
-        <div className="home-page">
-          <CelularImage />
-          <DownloadSection />
-        </div>
-      );
+  return (
+    <div className="main-section">
+      <div className="side-by-side">
+        <CelularImage />
+        <DownloadSection />
+      </div>
+      <div className='one'>
+      <HowItWorks />
+      </div>
+     
+    </div>
+  );
 };
 
 export default MainSection;

@@ -4,7 +4,7 @@ import NavBar from './NavBar';
 import MainSection from './MainSection';
 import HowItWorks from './HowItWorks';
 import PrivacyPolicy from './PrivacyPolicy';
-import TermsOfUse from './TermsOfUse'
+import TermsOfUse from './TermsOfUse';
 import './App.css';
 
 const App = () => {
@@ -13,12 +13,11 @@ const App = () => {
       <div className="App">
         <NavBar />
         <Routes>
-        <Route path="/" element={<MainSection />} />
+          <Route path="/" element={<MainSection />} />
+          <Route path="/" element={<HowItWorks />} />
           <Route path="/privacy-policy" element={<PrivacyPolicy />} />
           <Route path="/terms-of-use" element={<TermsOfUse />} />
         </Routes>
-        <HowItWorks />
-        
       </div>
     </Router>
   );

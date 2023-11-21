@@ -2,7 +2,6 @@ body {
  font-family: 'Open Sans', sans-serif;
   margin: 0;
   padding: 0;
-  background: linear-gradient(-45deg, rgba(64, 150, 101,0.5), rgba(28, 87, 53,0.5), rgba(47, 117, 77,0.5),rgba(74, 165, 144,0.5));
   color: #000000;
   background-size: 400% 400%;
     animation: gradient 15s ease infinite;
@@ -11,90 +10,149 @@ body {
     overflow-x: hidden;
   
 }
-nav {
+.navbar {
   display: flex;
-  justify-content: space-around;
-  text-orientation: right;
+  justify-content: space-between;
+  align-items: center;
   padding: 10px;
   font-size: 20px;
+  background-color: #333; 
 }
 
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-
-li {
-  margin-right: 1rem;
-  position: relative;
+.logo {
   cursor: pointer;
 }
 
-.dropdown {
+.nav-links {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+}
+
+.nav-links li {
+  margin-right: 1rem;
+  position: relative;
+  right: 100px;
+}
+
+.nav-links li:last-child {
+  margin-right: 0;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #fff;
+  padding: 10px;
   position: relative;
 }
 
-.dropdown-content {
+.nav-links a::after {
+  content: '';
   display: block;
+  height: 2px;
+  width: 0;
+  background: transparent;
+  transition: width 0.3s;
+}
+
+.nav-links a:hover::after {
+  width: 100%;
+  background: #fff;
+}
+
+
+.dropdown {
+  position: relative;
+  bottom: 15px;
+  color: #fff;
+}
+
+.dropdown-content {
+  display: none;
   position: absolute;
   top: 100%;
-  left: 0;
-  background-color: #fff;
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
-  border-radius: 4px;
+  left: -50px; 
+  background: #333;
   padding: 10px;
-  z-index: 1;
+  border-radius: 5px;
 }
 
-.dropdown-content li {
-  margin: 0;
+.dropdown:hover .dropdown-content {
+  display: block;
 }
 
-.dropdown-content li a {
-  color: #333;
+.dropdown-content a {
+  color: #fff;
   text-decoration: none;
   display: block;
-  padding: 8px 0;
-  transition: background-color 0.3s;
+  padding: 10px;
 }
 
-.dropdown-content li a:hover {
-  background-color: #f0f0f0;
+.dropdown-content a:hover {
+  background-color: #555; 
 }
 
-.home-page {
-  display: flex;
-  justify-content: center; /* Centralizar horizontalmente */
-  align-items: center; /* Centralizar verticalmente */
-  padding: 2rem;
+.nav-links li:nth-child(2) {
+  margin-right: 0;
 }
+.logo img{
+  max-width:150px;
+  max-height:100px;
+  
+}
+
 
 
 .celular-image {
   flex: 1;
-  max-width: 50%; /* Divide o tamanho igualmente com o outro componente */
-  display: flex;
+  max-width: 50%; 
   align-items: center;
   justify-content: center;
 }
 .celular-image img {
-  width: 100%; /* Garante que a imagem não ultrapasse o contêiner */
-  max-width: 375px; /* Tamanho máximo da imagem */
-  max-height: 666px; /* Tamanho máximo da imagem */
-  height: auto; /* Mantém a proporção da imagem */
+  width: 100%; 
+  max-width: 375px; 
+  max-height: 666px; 
+  height: auto; 
 }
 
 
 
 .how-it-works {
-  text-align: center;
-  margin-top: 20px; 
-  }
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  margin-top: 50px;
+  color:#000000;
+  background-color: #fff;
+  max-height: 500px;
+}
 
+
+
+.image-section {
+  flex: 1;
+}
+
+.text-section {
+  flex: 1;
+  padding-left: 20px; 
+}
+
+.image-section img {
+  max-width:250px;
+  max-height:500px;
+  width: auto;
+  height: auto;
+  margin-left: 800px;
+}
 .download-section {
   flex: 1;
   max-width: 50%;
+  margin-top: 200px;
   text-align: left;
   display: flex;
   flex-direction: column;
@@ -154,17 +212,25 @@ li {
 }
 
 
-footer {
-  color: white;
-  text-align: center;
-  padding: 1rem;
-  position: fixed;
-  bottom: 0;
-  width: 100%;
- 
+
+.main-section {
+  background: linear-gradient(-45deg, rgba(64, 150, 101,0.5), rgba(28, 87, 53,0.5), rgba(47, 117, 77,0.5),rgba(74, 165, 144,0.5));
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centraliza na horizontal */
 }
 
-.how-it-works{
-  color:#f9f9f9;
-  background-color: #fff;
+.side-by-side {
+  display: flex;
+
+  justify-content: space-between;
+  width: 80%; /* Ajuste conforme necessário */
+  margin: 20px; /* Adapte conforme necessário */
+
+}
+
+.one{
+  position: relative;
+  overflow-x: hidden;
 }
