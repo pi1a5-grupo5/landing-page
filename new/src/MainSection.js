@@ -6,16 +6,21 @@ import HowItWorks from './HowItWorks';
 
 const MainSection = () => {
   return (
+    <div className='back'>
+      <div className='container'>
     <div className="main-section">
-      <div className='container'></div>
+      
       <div className="side-by-side">
         <CelularImage />
         <DownloadSection />
       </div>
+      </div>
       <div className='one'>
       <HowItWorks/>
-      </div>
     </div>
+    </div>
+    </div>
+    
   );
 };
 

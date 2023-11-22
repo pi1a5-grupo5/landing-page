@@ -13,7 +13,7 @@ const HowItWorks = () => {
          <li>Previsão de ganhos</li>
          <li>Análise de despesas</li>
          <li>Criar metas de ganhos</li>
-         <li>Receber alertas sobre gastos excessivos com manutenções,</li>
+         <li>Receber alertas sobre gastos com manutenções</li>
         </ul> 
         </p>
         </div>

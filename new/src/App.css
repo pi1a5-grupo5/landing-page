@@ -1,15 +1,24 @@
+.App{
+  background: linear-gradient(-45deg, rgba(64, 150, 101,0.5), rgba(28, 87, 53,0.5), rgba(47, 117, 77,0.5),rgba(74, 165, 144,0.5));
+  font-family: 'Montserrat', sans-serif;
+}
+.container {
+  max-width: 1440px;
+  margin: 0 auto; /* Centraliza o container */
+}
+
 body {
- font-family: 'Open Sans', sans-serif;
+  font-family: 'Montserrat', sans-serif; /* Altera a fonte para Montserrat */
+
   margin: 0;
   padding: 0;
   color: #000000;
   background-size: 400% 400%;
-    animation: gradient 15s ease infinite;
-    height: 100vh;
-    
-    overflow-x: hidden;
-  
+  animation: gradient 15s ease infinite;
+  height: 100vh;
+  overflow-x: hidden;
 }
+
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -106,26 +115,14 @@ body {
 
 
 .celular-image img {
-  width: 100%; 
+
   
   height: 800px; 
 }
 
 
 
-.how-it-works {
-  display: flex;
-  font-family: 'Montserrat', sans-serif;
-  align-items: center;
-  justify-content: space-between;
- align-items: flex-end;
- gap: 10px;
-  padding: 20px;
-  margin-top: 50px;
-  color:#000000;
-  background-color: #fff;
-  max-height: 500px;
-}
+
 
 .image-section,
 .text-section {
@@ -137,6 +134,7 @@ body {
  
   
   height: 520px; 
+
 }
 
 .text-section {
@@ -179,7 +177,6 @@ body {
 
 
 .main-section {
-  background: linear-gradient(-45deg, rgba(64, 150, 101,0.5), rgba(28, 87, 53,0.5), rgba(47, 117, 77,0.5),rgba(74, 165, 144,0.5));
   display: flex;
   flex-direction: column;
   align-items: center; 
@@ -211,15 +208,12 @@ body {
 .policyText h1{
   font-family: 'Open Sans', sans-serif;
 }
-
 .download-section {
-  max-width: 100%; /* Alterado para ocupar 100% da largura disponível */
+  max-width: 100%;
   margin-top: 200px;
-  text-align: left;
-  display: flex;
-  flex-direction: column;
+  margin-left: 50px;
+  text-align: center;
   justify-content: left;
-  align-items: left;
 }
 
 .download-section h1 {
@@ -233,35 +227,65 @@ body {
 .download-section p {
   font-size: 22px;
   margin-bottom: 20px;
-  font-family: 'Poppins', sans-serif;
-  text-align: left;
+  text-align: center;
   color: #000000;
 }
 
 .buttons {
   display: flex;
   flex-direction: row;
-  justify-content: left; /* Ajuste para centralizar os botões */
+  justify-content: center;
   gap: 10px;
+  margin-top: 20px; 
 }
 
 .buttons a {
   text-decoration: none;
 }
 
-.buttons #playstore img {
-  padding-top: 50px;
-  width: 200px;
-  height: 100px;
-  box-sizing: content-box;
+#apple img{
+ padding: 15px;
+}
+#playstore img {
+  max-width: 200px;
+  max-height: 100px;
+  padding: 0;
 }
 
-.buttons #apple img {
-  width: 300px;
-  height: 200px;
-  box-sizing: content-box;
+.how-it-works .text-section {
+  order: 1;
+  text-align: left; 
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+
+}
+.how-it-works .text-section h2{
+  padding: 0;
+ margin-right: 70px;
+}
+.how-it-works .text-section p{
+  font-size: 22px;
 }
 
-.container {
-  max-width: 1440px;
+.how-it-works ul {
+ padding-left: 0px;
+
+}
+
+
+.how-it-works{
+ display: flex ;
+ flex-direction: row-reverse;
+}
+.one{
+  width: 100%;
+  box-sizing: content-box;
+  background-color: #fff;
+  
+  
+}
+.image-section{
+  margin-top: 50px;
+  margin-left: 55px;
 }
