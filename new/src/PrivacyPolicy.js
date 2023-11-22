@@ -3,10 +3,10 @@ import './App.css';
 
 const PrivacyPolicy = () => {
   return (
-    <div>
+    <div className='policyText'>
       <h1>Política de Privacidade</h1>
       <br/> <strong>Última atualização: 21/11/2023</strong> <br/>
-<br/>Agradecemos por escolher o Carllet, um aplicativo de gestão financeira para motoristas de aplicativo. Sua privacidade é uma prioridade para nós, e estamos comprometidos em proteger as informações que você compartilha conosco.<br/> Esta Política de Privacidade descreve como coletamos, usamos, armazenamos e compartilhamos suas informações ao usar o aplicativo Carllet. Recomendamos que você leia atentamente esta política para entender como tratamos suas informações pessoais.
+<br/>Sua privacidade é uma prioridade para nós, e estamos comprometidos em proteger as informações que você compartilha conosco.<br/> Esta Política de Privacidade descreve como coletamos, usamos, armazenamos e compartilhamos suas informações ao usar o aplicativo Carllet. <br/> Recomendamos que você leia atentamente esta política para entender como tratamos suas informações pessoais.
 
 <h2>1. Informações Coletadas</h2>
 
@@ -37,7 +37,7 @@ const PrivacyPolicy = () => {
 <h2>5. Seus Direitos e Escolhas
 </h2>
 
-5.1. Acesso e Correção: Você tem o direito de acessar suas informações pessoais e corrigi-las, se necessário.
+5.1. Acesso e Correção: Você tem o direito de acessar suas informações pessoais e corrigi-las, se necessário.<br/>
 
 5.2. Exclusão de Conta: Se desejar excluir sua conta, entre em contato conosco.
 <h2>6. Geração de Estatísticas
@@ -50,9 +50,10 @@ const PrivacyPolicy = () => {
 <h2>7. Alterações na Política de Privacidade
 </h2>
 
-7.1. Atualizações: Podemos atualizar esta Política de Privacidade de tempos em tempos. Notificaremos você sobre alterações significativas. Recomendamos que reveja periodicamente esta política.
+7.1. Atualizações: Podemos atualizar esta Política de Privacidade de tempos em tempos. Notificaremos você sobre alterações significativas.<br/> Recomendamos que reveja periodicamente esta política.
 
-Ao usar o Carllet, você concorda com os termos desta Política de Privacidade. Se tiver dúvidas ou preocupações sobre nossas práticas de privacidade, entre em contato conosco pelo e-mail [seu@email.com].
+Ao usar o Carllet, você concorda com os termos desta Política de Privacidade. 
+<br/>Se tiver dúvidas ou preocupações sobre nossas práticas de privacidade, entre em contato conosco pelo e-mail app.carllet@gmail.com.
 
 <br/>Agradecemos por confiar no Carllet para suas necessidades de gestão financeira. Estamos aqui para ajudar a tornar sua experiência o mais segura e eficiente possível.
     </div>

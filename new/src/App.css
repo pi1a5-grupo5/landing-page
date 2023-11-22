@@ -174,15 +174,15 @@ body {
 
 .text-section ul li {
   list-style-type: none;
-  padding-left: 1em; /* Ajuste o espaçamento conforme necessário */
+  padding-left: 1em; 
 }
 
 .text-section ul li::before {
-  content: '\2022'; /* Código unicode para um ponto */
-  color: #417843; /* Cor do ponto, ajuste conforme necessário */
+  content: '\2022'; 
+  color: #417843; 
   display: inline-block;
   width: 1em;
-  margin-left: -1em; /* Garante que o ponto não altera o espaçamento total */
+  margin-left: -1em; 
 }
 .image-section img {
   max-width:250px;
@@ -266,11 +266,74 @@ body {
   display: flex;
 
   justify-content: space-between;
-  width: 80%; /* Ajuste conforme necessário */
-  margin: 20px; /* Adapte conforme necessário */
+  width: 80%; 
+  margin: 20px; 
 
 }
 
 .one{
   width: 100%;
 }
+@media only screen and (max-width: 768px) {
+  /* Estilos específicos para telas menores, como dispositivos móveis */
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nav-links {
+    margin-top: 10px;
+  }
+
+  .nav-links li {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+
+  .dropdown-content {
+    left: 0;
+  }
+
+  .main-section {
+    padding: 20px;
+  }
+
+  .how-it-works {
+    flex-direction: column;
+  }
+
+  .image-section img,
+  .download-section {
+    max-width: 100%;
+  }
+
+  .text-section {
+    max-width: 100%;
+    text-align: center;
+    padding: 0 20px;
+  }
+
+  .image-section img {
+    margin-left: 0;
+    margin-bottom: 20px;
+  }
+
+  .download-section {
+    margin-top: 20px;
+  }
+}
+
+.policyText p{
+  padding: 24px;
+  margin-right: 500px 0 500px 0;
+  white-space: nowrap;
+  overflow: hidden; 
+  text-overflow: clip;
+  max-width: 50%;
+  text-align: center;
+}
+.policyText h1{
+  font-family: 'Open Sans', sans-serif;
+}
+
+  
