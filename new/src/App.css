@@ -1,21 +1,18 @@
-.App{
-  background: linear-gradient(-45deg, rgba(64, 150, 101,0.5), rgba(28, 87, 53,0.5), rgba(47, 117, 77,0.5),rgba(74, 165, 144,0.5));
-  font-family: 'Montserrat', sans-serif;
-}
 .container {
-  max-width: 1440px;
-  margin: 0 auto; /* Centraliza o container */
+  max-width: 1920px;
+  margin: 0 auto; 
+  background: linear-gradient(-45deg, rgba(64, 150, 101,0.5), rgba(28, 87, 53,0.5), rgba(47, 117, 77,0.5),rgba(74, 165, 144,0.5));
+
 }
 
 body {
-  font-family: 'Montserrat', sans-serif; /* Altera a fonte para Montserrat */
-
+  background-color: #fff;
+  font-family: 'Montserrat', sans-serif;
   margin: 0;
   padding: 0;
   color: #000000;
   background-size: 400% 400%;
   animation: gradient 15s ease infinite;
-  height: 100vh;
   overflow-x: hidden;
 }
 
@@ -25,7 +22,7 @@ body {
   align-items: center;
   padding: 10px;
   font-size: 20px;
-  background-color: #333; 
+  background-color: #333;
 }
 
 .logo {
@@ -111,18 +108,9 @@ body {
   
 }
 
-
-
-
 .celular-image img {
-
-  
   height: 800px; 
 }
-
-
-
-
 
 .image-section,
 .text-section {
@@ -131,10 +119,7 @@ body {
 }
 
 .image-section img {
- 
-  
   height: 520px; 
-
 }
 
 .text-section {
@@ -144,13 +129,14 @@ body {
   justify-content: center;
   align-items: flex-end ;
   text-align: left;
-  padding-left: 20px;
+  padding-left: 50px;
+
 }
 
 .text-section p,
 .text-section ul {
   flex: 1;
-  max-width: 100%; /* Ocupa toda a largura do .text-section */
+  max-width: 100%; 
   display: flex;
   flex-direction: column;
   gap: 10px;
@@ -184,16 +170,13 @@ body {
 
 .side-by-side {
   display: flex;
-
-  justify-content: space-between;
-  width: 80%; 
+  gap:  20px;
+  justify-content: space-evenly;
+  width: 70%; 
   margin: 20px; 
 
 }
 
-.one{
-  width: 100%;
-}
 
 
 .policyText p{
@@ -213,28 +196,32 @@ body {
   margin-top: 200px;
   margin-left: 50px;
   text-align: center;
+  line-height: 1.6;
   justify-content: left;
 }
 
 .download-section h1 {
   font-size: 2rem;
   margin-bottom: 10px;
+  margin-left: 10px;
   font-size: 36px;
   color: #fff;
+  text-align: left;
   font-family: 'Open Sans', sans-serif;
 }
 
 .download-section p {
   font-size: 22px;
   margin-bottom: 20px;
-  text-align: center;
+  margin-left: 10px;
+  text-align: left;
   color: #000000;
 }
 
 .buttons {
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: left;
   gap: 10px;
   margin-top: 20px; 
 }

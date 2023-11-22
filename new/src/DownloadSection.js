@@ -7,11 +7,11 @@ function DownloadSection() {
     <div className="download-section">
       <h1>Baixe o Carllet agora!</h1>
       <p>
-      A sua ferramenta de gestão financeira, desenvolvida especialmente para motoristas de aplicativo como você.<br/> Combinando funcionalidades avançadas e uma interface intuitiva, <br/> o Carllet é a chave para simplificar e potencializar o controle das suas finanças.
+      A sua ferramenta de gestão financeira, desenvolvida <br/> especialmente para  motoristas de aplicativo como você.<br/> Combinando funcionalidades avançadas e uma interface<br/>  intuitiva, o Carllet é a chave para simplificar e potencializar <br/> o controle das suas finanças.
       </p>
       <div className="buttons">
-      <a href="URL DE DESTINO" id='apple'><img src="../apple.svg" /></a>
-      <a href="URL DE DESTINO" id='playstore'><img src="../play.png" /></a>
+      <a href="" id='apple'><img src="../apple.svg" /></a>
+      <a href="" id='playstore'><img src="../play.png" /></a>
     </div>
     </div>
   );
